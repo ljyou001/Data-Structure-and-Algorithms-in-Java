@@ -24,35 +24,23 @@ public class Stack {
 		int v = 0;
 		if (top == -1)
 			throw new IOException("Stack is empty");
-		else
-		{
-			v = arr[top];
-			top--;
-		}
+		v = arr[top];
+		top--;
 		return v;
 	}
 	public int top() throws IOException 
 	{
-		int v = 0;
 		if (top == -1)
 			throw new IOException("Stack is empty");
-		else
-			v = arr[top];
-		return v;
+		return arr[top];
 	}
 	public boolean isEmpty() 
 	{
-		if(top <= -1)
-			return true;
-		return false;
+		return top == -1;
 	}
 	public boolean isFull() 
 	{
-		if (top >= arr.length - 1)
-		{
-			return true;
-		}
-		return false;
+		return top == arr.length - 1;
 	}
 	public void printArray() 
 	{
