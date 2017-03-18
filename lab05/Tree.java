@@ -1,7 +1,4 @@
-package lab05;
-
 import java.util.Scanner;
-
 class TreeNode 
 {
 	String data;
