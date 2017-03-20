@@ -3,7 +3,6 @@ class TreeNode
 {
 	String data;
 	TreeNode left = null, right = null;
-
 	public TreeNode(String x) 
 	{
 		data = x;
