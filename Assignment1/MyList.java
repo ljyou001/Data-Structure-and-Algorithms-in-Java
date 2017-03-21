@@ -92,20 +92,28 @@ class MyList extends AbsList
 		int po = start;
 		for (int i = 1; i <= count; i++)
 		{
-			if(arr[arr[po][1]][0] == v)
+			if(arr[start][0] == v)
+			{
+				if (count == 1)
+				{
+					arr[start][1] = -2;
+					return true;
+				}
+				else
+				{
+					int alt = start;
+					start = arr[start][1];
+					arr[alt][1] = -2;
+					count--;
+					return true;
+				}
+			}
+			else if (arr[arr[po][1]][0] == v)
 			{
 				int alt = arr[po][1];
 				arr[po][1] = arr[alt][1];
 				arr[alt][1] = -2;
 				arr[alt][0] = 0 ;
-				count--;
-				return true;
-			}
-			else if(arr[start][0] == v)
-			{
-				int alt = start;
-				start = arr[start][1];
-				arr[alt][1] = -2;
 				count--;
 				return true;
 			}
