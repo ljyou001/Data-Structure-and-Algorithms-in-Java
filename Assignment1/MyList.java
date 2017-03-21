@@ -97,6 +97,7 @@ class MyList extends AbsList
 				if (count == 1)
 				{
 					arr[start][1] = -2;
+					count--;
 					return true;
 				}
 				else
