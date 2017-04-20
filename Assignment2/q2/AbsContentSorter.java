@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
 public abstract class AbsContentSorter 
 {
 	BufferedReader[] inputFiles = new BufferedReader[5];
