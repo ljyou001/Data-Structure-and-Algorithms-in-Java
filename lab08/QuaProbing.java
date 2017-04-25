@@ -63,32 +63,6 @@ public class QuaProbing
 			if(x > 0)
 				insert(x);
 		}
-		/*
-    int[] newTable = new int[nextPrime(table.length * 2)];
-		int index = 0, c = 0;
-		numOfKeys = 0;
-		for (int i = 0; i < table.length; i++)
-		{
-			if(table[i] > 0)
-			{
-				if(newTable[index] <= 0)
-				{
-					index = table[i] % newTable.length;
-				}
-				else
-				{
-					while(newTable[index]>0)
-					{
-						index = (table[i]% newTable.length + c*c) % newTable.length;
-						c++;
-					}
-				}
-				newTable[index] = table[i];
-				numOfKeys++;
-			}
-		}
-		this.table = newTable;
-		*/
 	}
 	
 	public void insert(int x) 
