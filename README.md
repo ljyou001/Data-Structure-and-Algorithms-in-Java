@@ -1,4 +1,5 @@
-# HKBU-COMP2015-Data-Structure-and-Algorithms
-Personal codes of COMP2015/COMP1210 Data Structures &amp; Algorithms, Hong Kong Baptist University
+# Data-Structure-and-Algorithms-in-Java
+
+Codes of Data Structures &amp; Algorithms
 
 Short Link for this page: https://git.io/vD6S4
